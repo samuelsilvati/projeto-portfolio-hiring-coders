@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bbf67acada.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="" alt="">
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/samuelsilvati/" target="_blank">Linkedin</a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/samuelsilvati" target="_blank">Github</a>        
+                </li>
+                
+                <li>
+                    <a href="mailto:samuel7silva@outlook" target="_blank">Email</a>
+                </li>
+            </ul>
+        </div>        
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Samuel Silva</h1>
+                <h5>Full Stack Development Student</h5>   
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i class="fa-solid fa-circle-arrow-down" id="animation"></i>
+            </div>
+            
+            <div style="display: none;" id="about">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore aliquam dolor consequuntur! Odit dolorum laudantium ab nobis. Omnis, culpa pariatur dignissimos error corporis fugiat mollitia, aliquid obcaecati, blanditiis vero explicabo.</p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Entre em contato:</p>
+                </div>
+                <form action=""></form>
+                <input type="text" placeholder="Seu melhor email">
+                <button>Enviar</button>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation')
+            arrow.classList.toggle('rotate')
+            var display = document.getElementById('about')
+            display.classList.toggle('active')
+        }
+    </script>
+    
+</body>
+</html>
